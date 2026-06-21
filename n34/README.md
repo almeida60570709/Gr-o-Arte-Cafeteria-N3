@@ -159,11 +159,11 @@ Tudo implementado em **JavaScript vanilla**, sem bibliotecas:
 
 | Integrante | Responsabilidade |
 |---|---|
-| [Nome 1] | Estruturação HTML semântico, conteúdo das páginas Início e Sobre |
-| [Nome 2] | Engenharia CSS — sistema de variáveis, grid/flexbox, responsividade |
-| [Nome 3] | JavaScript — navegação SPA, modal e filtros do cardápio |
-| [Nome 4] | JavaScript — validação de formulário com Regex e feedback de UI |
-| [Nome 5] | Conteúdo do cardápio, revisão de acessibilidade e testes de "aperto" de tela |
+| [Nome 1]tiago bezerra de almeida | Estruturação HTML semântico, conteúdo das páginas Início e Sobre |
+| [Nome 2]tiago bezerra de almeida  | Engenharia CSS — sistema de variáveis, grid/flexbox, responsividade |
+| [Nome 3]tiago bezerra de almeida  | JavaScript — navegação SPA, modal e filtros do cardápio |
+| [Nome 4]tiago bezerra de almeida  | JavaScript — validação de formulário com Regex e feedback de UI |
+| [Nome 5]tiago bezerra de almeida  | Conteúdo do cardápio, revisão de acessibilidade e testes de "aperto" de tela |
 
 ---
 
