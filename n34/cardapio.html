@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cardápio completo do Grão &amp; Arte: cafés clássicos e especiais, chás, doces e salgados artesanais.">
+<title>Cardápio — Grão &amp; Arte</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Pular para o conteúdo</a>
+
+<header>
+  <nav class="nav" aria-label="Navegação principal">
+    <a class="nav-logo" href="index.html" aria-label="Grão e Arte — Início">
+      <div class="nav-logo-badge" aria-hidden="true">☕</div>
+      <span class="nav-logo-text">Grão &amp; <b>Arte</b></span>
+    </a>
+
+    <ul class="nav-links" role="list" aria-label="Menu principal">
+      <li><a href="index.html"    data-page="home">Início</a></li>
+      <li><a href="sobre.html"    data-page="sobre">Sobre</a></li>
+      <li><a href="cardapio.html" data-page="cardapio">Cardápio</a></li>
+      <li><a href="servicos.html" data-page="servicos">Serviços</a></li>
+      <li><a href="contato.html"  data-page="contato">Contato</a></li>
+    </ul>
+
+    <button class="nav-ham" id="ham" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Menu mobile">
+    <a href="index.html"    data-page="home">🏠&nbsp; Início</a>
+    <a href="sobre.html"    data-page="sobre">☕&nbsp; Sobre</a>
+    <a href="cardapio.html" data-page="cardapio">📋&nbsp; Cardápio</a>
+    <a href="servicos.html" data-page="servicos">🛠️&nbsp; Serviços</a>
+    <a href="contato.html"  data-page="contato">✉️&nbsp; Contato</a>
+  </nav>
+</header>
+
+<main id="main">
+<div id="page-cardapio">
+
+  <section class="page-hero" aria-label="Cardápio">
+    <div class="wrap">
+      <div class="eyebrow" style="color:var(--c-amber)">O que preparamos</div>
+      <h1 class="h1">Nosso <span style="color:var(--c-amber);font-style:italic">Cardápio</span></h1>
+      <p class="page-hero-sub" style="margin-top:.9rem">
+        Clique em qualquer item para ver detalhes, ingredientes e informações sensoriais.
+      </p>
+    </div>
+  </section>
+
+  <div class="menu-filters" role="navigation" aria-label="Filtrar categorias">
+    <div class="wrap">
+      <div class="filter-wrap" role="group" aria-label="Categorias">
+        <button class="fbtn active" data-filter="all"      aria-pressed="true">☕ Todos</button>
+        <button class="fbtn" data-filter="cafes"    aria-pressed="false">Cafés</button>
+        <button class="fbtn" data-filter="chas"     aria-pressed="false">Chás &amp; Outros</button>
+        <button class="fbtn" data-filter="doces"    aria-pressed="false">Doces</button>
+        <button class="fbtn" data-filter="salgados" aria-pressed="false">Salgados</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="menu-body" aria-label="Itens do cardápio">
+    <div class="wrap">
+
+      <!-- CAFÉS CLÁSSICOS -->
+      <div class="menu-cat" data-cat="cafes">
+        <h2 class="menu-cat-title">☕ Cafés Clássicos</h2>
+        <div class="menu-items-grid" role="list">
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="☕" data-name="Espresso Simples"
+            data-desc="Dose única extraída em 25–30s a 9 bar. Grão 100% arábica de origem única da Fazenda Recanto, MG. Notas de chocolate amargo, ameixa e caramelo com crema espessa."
+            data-price="R$ 7,00" data-tags="Grão único,Arábica,Alta altitude,Vegano"
+            aria-label="Espresso Simples R$7 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">☕</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Espresso Simples</div>
+              <div class="mitem-sub">Grão único · Arábica · 30 ml</div>
+            </div>
+            <div class="mitem-price">R$ 7,00</div>
+          </article>
+
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="☕" data-name="Espresso Duplo"
+            data-desc="Dose dupla para quem prefere intensidade. Notas acentuadas de cacau, tâmara e especiarias. Ideal para apreciar a complexidade do grão sem diluição."
+            data-price="R$ 9,50" data-tags="Grão único,Intenso,Vegano"
+            aria-label="Espresso Duplo R$9,50 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">☕</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Espresso Duplo</div>
+              <div class="mitem-sub">Dose dupla · 60 ml</div>
+            </div>
+            <div class="mitem-price">R$ 9,50</div>
+          </article>
+
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🥛" data-name="Cappuccino Italiano"
+            data-desc="Um terço espresso, um terço leite vaporizado e um terço de espuma seca — proporção clássica italiana. Polvilhado com cacau extra-amargo. Disponível com leite vegetal."
+            data-price="R$ 14,00" data-tags="Clássico,Com leite,Pode ser vegano"
+            aria-label="Cappuccino Italiano R$14 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🥛</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Cappuccino Italiano</div>
+              <div class="mitem-sub">Clássico · Espuma seca · 180 ml</div>
+            </div>
+            <div class="mitem-price">R$ 14,00</div>
+          </article>
+
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🎨" data-name="Flat White"
+            data-desc="Bebida australiana com maior proporção de espresso e microespuma aveludada. A textura cremosa potencializa as notas do grão. Um favorito dos conhecedores."
+            data-price="R$ 15,50" data-tags="Australiano,Microespuma,Pode ser vegano"
+            aria-label="Flat White R$15,50 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🎨</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Flat White</div>
+              <div class="mitem-sub">Microespuma aveludada · 160 ml</div>
+            </div>
+            <div class="mitem-price">R$ 15,50</div>
+          </article>
+        </div>
+      </div>
+
+      <!-- CAFÉS ESPECIAIS -->
+      <div class="menu-cat" data-cat="cafes">
+        <h2 class="menu-cat-title">✨ Cafés Especiais</h2>
+        <div class="menu-items-grid" role="list">
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🌊" data-name="V60 de Origem"
+            data-desc="Método japonês de coagem por gotejamento. Grãos naturais da Etiópia Yirgacheffe — notas de mirtilo, jasmim e bergamota. Preparado mesa a mesa em 4 minutos."
+            data-price="R$ 22,00" data-tags="Método manual,Etiópia,Acidez elegante,Vegano"
+            aria-label="V60 de Origem R$22 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🌊</div>
+            <div class="mitem-info">
+              <div class="mitem-name">V60 de Origem</div>
+              <div class="mitem-sub">Etiópia Yirgacheffe · Método manual</div>
+            </div>
+            <div class="mitem-price">R$ 22,00</div>
+          </article>
+
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🍵" data-name="Aeropress Competition"
+            data-desc="Receita vencedora do Campeonato Brasileiro de Aeropress, adaptada pela nossa head barista. Infusão invertida. Notas de tangerina, mel e castanha."
+            data-price="R$ 24,00" data-tags="Receita premiada,Método manual,Vegano"
+            aria-label="Aeropress Competition R$24 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🍵</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Aeropress Competition</div>
+              <div class="mitem-sub">Receita premiada · Método manual</div>
+            </div>
+            <div class="mitem-price">R$ 24,00</div>
+          </article>
+
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🧊" data-name="Cold Brew 24h"
+            data-desc="Infusão a frio por 24h em água filtrada. Extrai açúcares e óleos sem acidez. Notas de chocolate ao leite, baunilha e ameixa. Servido com gelo e casca de laranja."
+            data-price="R$ 18,00" data-tags="Cold Brew,Sem acidez,Gelado,Vegano"
+            aria-label="Cold Brew 24h R$18 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🧊</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Cold Brew 24h</div>
+              <div class="mitem-sub">Infusão a frio · Servido gelado</div>
+            </div>
+            <div class="mitem-price">R$ 18,00</div>
+          </article>
+
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🌸" data-name="Latte de Lavanda"
+            data-desc="Espresso duplo com xarope artesanal de lavanda orgânica e leite texturizado. Apresentação com latte art e flores secas de lavanda. Uma experiência sensorial completa."
+            data-price="R$ 19,00" data-tags="Assinatura,Floral,Latte art,Pode ser vegano"
+            aria-label="Latte de Lavanda R$19 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🌸</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Latte de Lavanda</div>
+              <div class="mitem-sub">Assinatura da casa · Latte art</div>
+            </div>
+            <div class="mitem-price">R$ 19,00</div>
+          </article>
+        </div>
+      </div>
+
+      <!-- CHÁS -->
+      <div class="menu-cat" data-cat="chas">
+        <h2 class="menu-cat-title">🫖 Chás &amp; Outras Bebidas</h2>
+        <div class="menu-items-grid" role="list">
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🍃" data-name="Chai Latte"
+            data-desc="Mistura indiana de chá preto com especiarias (canela, cardamomo, gengibre, cravo) preparada na hora com leite vaporizado. Nível de picância ajustável."
+            data-price="R$ 16,00" data-tags="Indiano,Especiarias,Pode ser vegano"
+            aria-label="Chai Latte R$16 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🍃</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Chai Latte</div>
+              <div class="mitem-sub">Especiarias indianas · Leite vaporizado</div>
+            </div>
+            <div class="mitem-price">R$ 16,00</div>
+          </article>
+
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🟡" data-name="Golden Milk"
+            data-desc="Leite de cúrcuma com canela, pimenta-do-reino e mel silvestre. Bebida ayurvédica sem cafeína — ótima para o fim do dia. Disponível com leite vegetal."
+            data-price="R$ 15,00" data-tags="Sem cafeína,Ayurvédico,Pode ser vegano"
+            aria-label="Golden Milk R$15 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🟡</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Golden Milk</div>
+              <div class="mitem-sub">Cúrcuma &amp; especiarias · Sem cafeína</div>
+            </div>
+            <div class="mitem-price">R$ 15,00</div>
+          </article>
+
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🫖" data-name="Chá de Ervas Frescas"
+            data-desc="Seleção diária do nosso jardim interno: camomila, hortelã, melissa, gengibre ou hibisco. Bule de vidro temperado. Acompanha mel silvestre e canela em rama."
+            data-price="R$ 12,00" data-tags="Sem cafeína,Fresco,Orgânico,Vegano"
+            aria-label="Chá de Ervas R$12 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🫖</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Chá de Ervas Frescas</div>
+              <div class="mitem-sub">Ervas do jardim · Bule de vidro</div>
+            </div>
+            <div class="mitem-price">R$ 12,00</div>
+          </article>
+        </div>
+      </div>
+
+      <!-- DOCES -->
+      <div class="menu-cat" data-cat="doces">
+        <h2 class="menu-cat-title">🍰 Doces &amp; Pães</h2>
+        <div class="menu-items-grid" role="list">
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🎂" data-name="Bolo de Café com Nozes"
+            data-desc="Bolo úmido com espresso concentrado da casa, nozes pecan e cobertura de cream cheese com raspas de laranja. Receita exclusiva da Ana, assado fresco toda manhã."
+            data-price="R$ 16,00" data-tags="Forno próprio,Sem conservantes,Contém glúten"
+            aria-label="Bolo de Café com Nozes R$16 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🎂</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Bolo de Café com Nozes</div>
+              <div class="mitem-sub">Forno próprio · Fresco diariamente</div>
+            </div>
+            <div class="mitem-price">R$ 16,00</div>
+          </article>
+
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🥐" data-name="Croissant Manteiga"
+            data-desc="Massa folhada com 72h de fermentação lenta, manteiga francesa AOP e flor de sal. Crocante por fora, laminado por dentro. Acompanha geleia de frutas vermelhas."
+            data-price="R$ 13,50" data-tags="Fermentação lenta,Manteiga francesa,Contém glúten"
+            aria-label="Croissant Manteiga R$13,50 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🥐</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Croissant Manteiga</div>
+              <div class="mitem-sub">72h fermentação · Manteiga francesa</div>
+            </div>
+            <div class="mitem-price">R$ 13,50</div>
+          </article>
+
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🍫" data-name="Brownie Chocolate 70%"
+            data-desc="Brownie fudgy com chocolate amargo 70% cacau, flor de sal e amêndoas. Textura densa e úmida. Não contém farinha de trigo — naturalmente sem glúten."
+            data-price="R$ 14,00" data-tags="Sem glúten,Chocolate 70%,Vegetariano"
+            aria-label="Brownie Chocolate 70% R$14 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🍫</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Brownie Chocolate 70%</div>
+              <div class="mitem-sub">Sem glúten · Fudgy · Flor de sal</div>
+            </div>
+            <div class="mitem-price">R$ 14,00</div>
+          </article>
+        </div>
+      </div>
+
+      <!-- SALGADOS -->
+      <div class="menu-cat" data-cat="salgados">
+        <h2 class="menu-cat-title">🥪 Salgados &amp; Pratos Leves</h2>
+        <div class="menu-items-grid" role="list">
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🥪" data-name="Sanduíche Caprese"
+            data-desc="Pão artesanal de fermentação natural com tomate sweet grape, muçarela de búfala, manjericão fresco, balsâmico e azeite. Tostado na chapa. Vegetariano."
+            data-price="R$ 26,00" data-tags="Vegetariano,Fermentação natural,Fresco"
+            aria-label="Sanduíche Caprese R$26 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🥪</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Sanduíche Caprese</div>
+              <div class="mitem-sub">Pão artesanal · Búfala · Vegetariano</div>
+            </div>
+            <div class="mitem-price">R$ 26,00</div>
+          </article>
+
+          <article class="mitem reveal" role="listitem" tabindex="0"
+            data-icon="🥗" data-name="Bowl Energético"
+            data-desc="Granola artesanal com iogurte grego integral, frutas frescas da estação, mel silvestre e sementes de chia e linhaça. Rico em fibras — perfeito para começar o dia."
+            data-price="R$ 23,00" data-tags="Proteico,Saudável,Vegetariano"
+            aria-label="Bowl Energético R$23 — clique para detalhes">
+            <div class="mitem-icon" aria-hidden="true">🥗</div>
+            <div class="mitem-info">
+              <div class="mitem-name">Bowl Energético</div>
+              <div class="mitem-sub">Granola + Iogurte + Frutas frescas</div>
+            </div>
+            <div class="mitem-price">R$ 23,00</div>
+          </article>
+        </div>
+      </div>
+
+    </div><!-- /wrap -->
+  </section>
+
+  <!-- MODAL DETALHE -->
+  <div class="modal-bg" id="modalBg" role="dialog" aria-modal="true" aria-labelledby="mName">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+      <div id="mIcon" aria-hidden="true">☕</div>
+      <h2 id="mName"></h2>
+      <p id="mDesc"></p>
+      <div id="mPrice"></div>
+      <div class="modal-tags" id="mTags" aria-label="Características do produto"></div>
+    </div>
+  </div>
+
+</div><!-- /page-cardapio -->
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Grão &amp; <b>Arte</b></div>
+        <p class="footer-brand-desc">
+          Café especial artesanal em Jaraguá do Sul. Do grão à xícara, com respeito ao produtor e amor pelo que fazemos.
+        </p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegação</div>
+        <ul class="footer-links" role="list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Cafés</div>
+        <ul class="footer-links" role="list">
+          <li><a href="cardapio.html">Espressos</a></li>
+          <li><a href="cardapio.html">Métodos Manuais</a></li>
+          <li><a href="cardapio.html">Cold Brew</a></li>
+          <li><a href="cardapio.html">Lattes Especiais</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <ul class="footer-links" role="list">
+          <li><span style="color:rgba(246,237,219,.5)">Centro, Jaraguá do Sul – SC</span></li>
+          <li><span style="color:rgba(246,237,219,.5)">(47) 99672-5482</span></li>
+          <li><span style="color:rgba(246,237,219,.5)">Seg–Sex 7h–20h</span></li>
+          <li><span style="color:rgba(246,237,219,.5)">Sáb–Dom 8h–21h</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 Grão &amp; Arte. Todos os direitos reservados.</p>
+      <div class="footer-social" aria-label="Redes sociais">
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13.5 9.2h1.7V7h-1.9c-1.7 0-2.6 1-2.6 2.6V11H9v2h1.6v6h2.1v-6h1.7l.3-2h-2V9.7c0-.4.2-.5.5-.5z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://wa.me/5547996725482" aria-label="WhatsApp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.6 13.8L3 21l4.4-1.3A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.6 9.3c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.8.1.1 0 .3-.1.4-.2.3-.4.5-.6.7-.2.2-.4.4-.2.7.4.7 1 1.3 1.6 1.7.3.2.5.2.7 0 .2-.2.5-.5.7-.7.2-.2.3-.2.5-.1.5.2 1.4.7 1.7.8.2.1.4.2.4.4 0 .2 0 .9-.3 1.2-.4.4-1.2.7-1.7.7-1 0-2.2-.5-3.4-1.6-1.5-1.4-2.2-2.8-2.4-3.4-.1-.3-.4-1.1-.1-1.6z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="stt" aria-label="Voltar ao topo">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

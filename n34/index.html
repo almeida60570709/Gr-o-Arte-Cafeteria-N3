@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Grão &amp; Arte — Cafeteria artesanal com os melhores grãos selecionados, baristas premiados e ambiente acolhedor em Jaraguá do Sul.">
+<title>Grão &amp; Arte — Café Especial</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Pular para o conteúdo</a>
+
+<!-- ══════════════════════════════════════
+     NAVBAR
+     ══════════════════════════════════════ -->
+<header>
+  <nav class="nav" aria-label="Navegação principal">
+    <a class="nav-logo" href="index.html" aria-label="Grão e Arte — Início">
+      <div class="nav-logo-badge" aria-hidden="true">☕</div>
+      <span class="nav-logo-text">Grão &amp; <b>Arte</b></span>
+    </a>
+
+    <ul class="nav-links" role="list" aria-label="Menu principal">
+      <li><a href="index.html"    data-page="home">Início</a></li>
+      <li><a href="sobre.html"    data-page="sobre">Sobre</a></li>
+      <li><a href="cardapio.html" data-page="cardapio">Cardápio</a></li>
+      <li><a href="servicos.html" data-page="servicos">Serviços</a></li>
+      <li><a href="contato.html"  data-page="contato">Contato</a></li>
+    </ul>
+
+    <button class="nav-ham" id="ham" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Menu mobile">
+    <a href="index.html"    data-page="home">🏠&nbsp; Início</a>
+    <a href="sobre.html"    data-page="sobre">☕&nbsp; Sobre</a>
+    <a href="cardapio.html" data-page="cardapio">📋&nbsp; Cardápio</a>
+    <a href="servicos.html" data-page="servicos">🛠️&nbsp; Serviços</a>
+    <a href="contato.html"  data-page="contato">✉️&nbsp; Contato</a>
+  </nav>
+</header>
+
+<!-- ══════════════════════════════════════
+     MAIN
+     ══════════════════════════════════════ -->
+<main id="main">
+<div id="page-home">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Apresentação">
+    <div class="hero-deco" aria-hidden="true">
+      <div class="hero-steam">
+        <i></i><i></i><i></i>
+      </div>
+      <div class="hero-cup">☕</div>
+    </div>
+
+    <div class="wrap hero-inner">
+      <div class="hero-tag" role="note">✦ Café Especial Artesanal</div>
+      <h1 class="h1 hero-title">
+        Onde cada <em>grão</em><br>conta uma história
+      </h1>
+      <p class="hero-desc">
+        Do campo à xícara — selecionamos os melhores grãos das regiões produtoras
+        do Brasil e do mundo. Torrefação artesanal, baristas apaixonados e um ambiente
+        que convida à contemplação.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="cardapio.html">☕ Ver Cardápio</a>
+        <a class="btn btn-ghost" href="sobre.html">Nossa História</a>
+      </div>
+      <div class="hero-stats" aria-label="Números da cafeteria">
+        <div><div class="hero-stat-n">7+</div><div class="hero-stat-l">Anos de história</div></div>
+        <div><div class="hero-stat-n">40+</div><div class="hero-stat-l">Grãos selecionados</div></div>
+        <div><div class="hero-stat-n">4.9★</div><div class="hero-stat-l">Avaliação média</div></div>
+        <div><div class="hero-stat-n">12k+</div><div class="hero-stat-l">Clientes felizes</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" aria-labelledby="feat-h">
+    <div class="wrap">
+      <div class="eyebrow" aria-hidden="true">Por que nos escolher</div>
+      <h2 class="h2" id="feat-h">A experiência Grão &amp; Arte</h2>
+      <p style="color:var(--c-muted);max-width:520px;margin-top:.6rem">
+        Cada detalhe é pensado para você ter o melhor momento com seu café.
+      </p>
+      <div class="features-grid">
+        <article class="feat-card reveal">
+          <div class="feat-icon" aria-hidden="true">🌱</div>
+          <h3 class="h3">Origem Rastreável</h3>
+          <p>Conhecemos cada fazenda parceira. Transparência total da origem ao preparo, com certificação de comércio justo.</p>
+        </article>
+        <article class="feat-card reveal">
+          <div class="feat-icon" aria-hidden="true">🔥</div>
+          <h3 class="h3">Torra Artesanal</h3>
+          <p>Torramos em pequenos lotes semanais, garantindo frescor e preservação de aromas e notas sensoriais únicas.</p>
+        </article>
+        <article class="feat-card reveal">
+          <div class="feat-icon" aria-hidden="true">🏆</div>
+          <h3 class="h3">Baristas Premiados</h3>
+          <p>Nossa equipe participa e vence campeonatos nacionais de barismo. Técnica e paixão em cada preparo.</p>
+        </article>
+        <article class="feat-card reveal">
+          <div class="feat-icon" aria-hidden="true">🛋️</div>
+          <h3 class="h3">Ambiente Acolhedor</h3>
+          <p>Espaço projetado para desacelerar: leitura, trabalho remoto ou apenas um bom papo entre amigos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME CTA -->
+  <section class="home-cta" aria-label="Chamada para ação">
+    <div class="wrap">
+      <div class="eyebrow" style="justify-content:center" aria-hidden="true">Venha nos visitar</div>
+      <h2 class="h2 reveal">Sua próxima xícara favorita<br>está esperando por você</h2>
+      <p class="reveal">Seg–Sex 7h às 20h &nbsp;|&nbsp; Sáb–Dom 8h às 21h</p>
+      <div class="home-cta-btns">
+        <a class="btn btn-gold reveal" href="contato.html">✉️ Fale Conosco</a>
+        <a class="btn btn-ghost reveal" href="cardapio.html">📋 Ver Cardápio</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+</main>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Grão &amp; <b>Arte</b></div>
+        <p class="footer-brand-desc">
+          Café especial artesanal em Jaraguá do Sul. Do grão à xícara, com respeito ao produtor e amor pelo que fazemos.
+        </p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegação</div>
+        <ul class="footer-links" role="list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Cafés</div>
+        <ul class="footer-links" role="list">
+          <li><a href="cardapio.html">Espressos</a></li>
+          <li><a href="cardapio.html">Métodos Manuais</a></li>
+          <li><a href="cardapio.html">Cold Brew</a></li>
+          <li><a href="cardapio.html">Lattes Especiais</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <ul class="footer-links" role="list">
+          <li><span style="color:rgba(246,237,219,.5)">Centro, Jaraguá do Sul – SC</span></li>
+          <li><span style="color:rgba(246,237,219,.5)">(47) 99672-5482</span></li>
+          <li><span style="color:rgba(246,237,219,.5)">Seg–Sex 7h–20h</span></li>
+          <li><span style="color:rgba(246,237,219,.5)">Sáb–Dom 8h–21h</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 Grão &amp; Arte. Todos os direitos reservados.</p>
+      <div class="footer-social" aria-label="Redes sociais">
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13.5 9.2h1.7V7h-1.9c-1.7 0-2.6 1-2.6 2.6V11H9v2h1.6v6h2.1v-6h1.7l.3-2h-2V9.7c0-.4.2-.5.5-.5z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://wa.me/5547996725482" aria-label="WhatsApp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.6 13.8L3 21l4.4-1.3A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.6 9.3c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.8.1.1 0 .3-.1.4-.2.3-.4.5-.6.7-.2.2-.4.4-.2.7.4.7 1 1.3 1.6 1.7.3.2.5.2.7 0 .2-.2.5-.5.7-.7.2-.2.3-.2.5-.1.5.2 1.4.7 1.7.8.2.1.4.2.4.4 0 .2 0 .9-.3 1.2-.4.4-1.2.7-1.7.7-1 0-2.2-.5-3.4-1.6-1.5-1.4-2.2-2.8-2.4-3.4-.1-.3-.4-1.1-.1-1.6z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="stt" aria-label="Voltar ao topo">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
